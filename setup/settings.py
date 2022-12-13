@@ -124,12 +124,12 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 #Todos os arquivos staticos estarão dentro desta pasta
-STATICS_DIRS = [
-    os.path.join(BASE_DIR, 'templates/static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'setup/static')
 ]
 
 #Caminho absoluto do diretório, aonde o python vai coletar esses arquivos estáticos para que ele faça a iplantação
-STATIC_ROOT =  os.path.join(BASE_DIR, 'templates/static')
+STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
 
 
 # Default primary key field type
